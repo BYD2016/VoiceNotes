@@ -2,7 +2,6 @@ package codepath.com.cn.imrecord.view;
 
 import android.app.Dialog;
 import android.content.Context;
-import android.content.res.Resources;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
@@ -56,6 +55,7 @@ final class RecordAdioDialogManager {
             mTvDialogRecordingMic.setBackgroundResource(R.drawable.recorder);
             mTvDialogRecordingVolume.setVisibility(View.VISIBLE);
             mTvDialogRecordingPromentMsg.setText(R.string.dialog_recording_prompt);
+            mTvDialogRecordingPromentMsg.setBackgroundResource(0);
         }
     }
 
@@ -64,6 +64,8 @@ final class RecordAdioDialogManager {
             mTvDialogRecordingMic.setBackgroundResource(R.drawable.cancel);
             mTvDialogRecordingVolume.setVisibility(View.GONE);
             mTvDialogRecordingPromentMsg.setText(R.string.record_audio_want_to_cancel);
+            mTvDialogRecordingPromentMsg.setBackgroundResource(
+                    R.drawable.tv_dialog_recording_promentmsg_bk);
         }
     }
 
@@ -72,6 +74,7 @@ final class RecordAdioDialogManager {
             mTvDialogRecordingMic.setBackgroundResource(R.drawable.voice_to_short);
             mTvDialogRecordingVolume.setVisibility(View.GONE);
             mTvDialogRecordingPromentMsg.setText(R.string.dialog_recording_too_short);
+            mTvDialogRecordingPromentMsg.setBackgroundResource(0);
         }
     }
 

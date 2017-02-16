@@ -5,10 +5,10 @@
     android:id="@+id/activity_main"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:background="@drawable/dialog_record_gk"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="20dp"
-    android:background="@drawable/dialog_record_gk"
     >
 
    <LinearLayout
@@ -34,8 +34,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:padding="5dp"
         android:text="@string/dialog_recording_prompt"
         android:textColor="@android:color/white"
+        android:textStyle="bold"
+        tools:background="@drawable/tv_dialog_recording_promentmsg_bk"
         />
 
 </LinearLayout>
